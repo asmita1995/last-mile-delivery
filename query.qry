@@ -1,0 +1,21 @@
+query getStatus{
+    description: "Select all history"
+    statement:
+   SELECT com.syntel.demo.retail.Driver
+    WHERE (emailId==_$emailId1)
+   
+} 
+
+query getParcel{
+  description:"get parcel details"
+  statement:
+  SELECT com.syntel.demo.retail.Parcel
+  WHERE (parcelId==_$parcelId)
+}
+
+query getCustomer{
+  description:"get parcel details"
+  statement:
+  SELECT com.syntel.demo.retail.Customer
+  WHERE (emailId==_$emailId)
+}
